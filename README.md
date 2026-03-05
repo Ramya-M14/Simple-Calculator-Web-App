@@ -13,14 +13,6 @@ The application performs basic arithmetic operations and also allows users to sw
 - CSS
 - JavaScript
 
-## Project Structure
-
-Simple-Calculator-Web-App
-│
-├── index.html
-├── style.css
-└── script.js
-
 ## How to Run
 
 1. Download or clone the repository
