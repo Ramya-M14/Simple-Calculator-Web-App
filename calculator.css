@@ -1,0 +1,117 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family :system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width : 100%;
+    height : 100vh;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    transition : all 0.3s ease;
+}
+
+body.light-mode{
+    background: linear-gradient(45deg, #f0f0f0, #ffffff);
+}
+
+
+.calculator{
+    border : 1px solid #717377;
+    padding : 20px;
+    border-radius : 20px;
+    background : transparent;
+    box-shadow : 0px 3px 15px rgba(125, 125, 127, 0.5);
+    transition : all 0.3s ease;
+}
+
+body.light-mode.calculator{
+    border : 1px solid #717377;
+    box-shadow : 0px 3px 15px rgba(0, 0, 0, 0.2);
+    background : rgba(255, 255, 255, 0.9);
+}
+
+input{
+    width : 270px;
+    height: 75px;
+    border : none;
+    padding : 15px;
+    margin : 10px;
+    color : aliceblue;
+    background : transparent;
+    box-shadow : 0px 3px 15px rgba(118, 118, 120, 0.5);
+    font-size : 40px;
+    text-align : right;
+    border-radius : 8px;
+    cursor : pointer;
+    transition : all 0.3s ease;
+
+}
+
+body.light-mode input{
+    color : #333;
+    background : rgba(255, 255, 255, 0.8);
+    box-shadow : 0px 3px 15px rgba(112, 15, 15, 0.1);
+}
+
+button{
+    border : none;
+    width : 50px;
+    height : 50px;
+    padding : 2%;
+    margin : 10px;
+    border-radius : 50%;
+    background : transparent;
+    box-shadow : -8px -8px 15px rgba(225, 225, 225, 0.1);
+    color : aliceblue;
+    font-size: 23px;
+    cursor : pointer;
+    transition : all 0.3s ease;
+
+}
+
+body.light-mode button{
+    color : #333;
+    background : rgba(255, 255, 255, 0.9);
+    box-shadow : -8px 8px 15px rgba(45, 4, 4, 0.1);
+}
+
+.eqlbtn{
+    background-color: #fb7c14;
+}
+
+body.light-mode .eqlbtn{
+    color : white;
+    background : #ff9500;
+}
+
+.clear{
+   color: #f42a2a; 
+}
+
+body.light-mode .clear{
+    color : #ff4444;
+}
+
+.arithmeticOperators{
+    color: aqua;
+}
+
+body.light-mode .arithemeticOperators{
+    color : #007bff;
+}
+
+#themeBtn{
+    background-color : #555;
+    font-size : 20px;
+}
+
+body.light-mode #themeBtn{
+    background-color : #ddd;
+    color : #333;
+}
